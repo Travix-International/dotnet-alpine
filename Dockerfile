@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine
+FROM mcr.microsoft.com/dotnet/core/runtime-deps:2.2-alpine
 
 #Install glibc on alpine (https://github.com/sgerrand/alpine-pkg-glibc) suggested by [https://github.com/grpc/grpc/issues/18428]
 RUN apk --no-cache add ca-certificates wget
